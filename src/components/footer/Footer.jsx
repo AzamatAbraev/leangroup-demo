@@ -11,7 +11,7 @@ export class Footer extends Component {
       <footer className="footer">
         <div className="container">
           <div className="footer__top">
-            <a href="#" className="footer__home">
+            <a href="#products" className="footer__home">
               <img src={logo} alt="Logo" />
             </a>
             <div className="footer__media">
@@ -31,9 +31,9 @@ export class Footer extends Component {
               <div className="footer__col">
                 <h3 className="footer__col__title">Продукция</h3>
                 <div className="footer__col__desc">
-                  <a href="#">Продукция</a>
-                  <a href="#">Экструзионные тубы</a>
-                  <a href="#">Другая упаковка</a>
+                  <a href="#products-tab">Продукция</a>
+                  <a href="#products-tab">Экструзионные тубы</a>
+                  <a href="#products-tab">Другая упаковка</a>
                 </div>
               </div>
               <div className="footer__col">
@@ -41,13 +41,13 @@ export class Footer extends Component {
                 <div className="footer__col__desc">
                   <a href="#about">О нас</a>
                   <a href="#team">Наша команда</a>
-                  <a href="#sertificates">Сертификаты</a>
+                  <a href="#certificates">Сертификаты</a>
                 </div>
               </div>
               <div className="footer__col">
                 <h3 className="footer__col__title">Сертификаты</h3>
                 <div className="footer__col__desc">
-                  <a href="#contact">Контакты</a>
+                  <a href="#info">Контакты</a>
                   <a href="#news">Новости</a>
                   <a href="#vacancies">Вакансии</a>
                 </div>
