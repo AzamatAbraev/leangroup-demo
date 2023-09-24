@@ -73,13 +73,13 @@ export class Header extends Component {
               </div>
             </div>
             <div className={`nav__res ${nav ? "show" : ""}`}>
-              <a className="nav__res__link">Продукция</a>
-              <a className="nav__res__link">Сертификаты</a>
-              <a className="nav__res__link">Наша команда</a>
-              <a className="nav__res__link">О нас</a>
-              <a className="nav__res__link">Новости</a>
-              <a className="nav__res__link">Вакансии</a>
-              <a className="nav__res__link">Контакты</a>
+              <a href="#products" className="nav__res__link">Продукция</a>
+              <a href="#certificates" className="nav__res__link">Сертификаты</a>
+              <a href="team" className="nav__res__link">Наша команда</a>
+              <a href="#about" className="nav__res__link">О нас</a>
+              <a href="#news" className="nav__res__link">Новости</a>
+              <a href="#vacancies" className="nav__res__link">Вакансии</a>
+              <a href="#info" className="nav__res__link">Контакты</a>
             </div>
           </div>
         </nav>
