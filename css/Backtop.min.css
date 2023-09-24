@@ -1,0 +1,1 @@
+#backtop{position:fixed;bottom:20px;right:20px;background-color:#ef7c00;padding:25px;border-radius:50%;z-index:11}#backtop .backtop-container{position:relative}#backtop a{position:relative;cursor:pointer}#backtop a img{position:absolute;background-color:rgba(0,0,0,0);top:50%;left:50%;transform:translate(-50%, -50%)}

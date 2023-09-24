@@ -1,0 +1,113 @@
+.info {
+  padding-top: 40px;
+  background-color: #fff;
+
+  &__container {
+    background-image: url(../../assets/images/form-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    color: #2c2d2e;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 16px;
+
+    span {
+      color: #ef7c00;
+    }
+  }
+
+  &__subtitle {
+    color: #2c2d2e;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__header {
+    padding-bottom: 24px;
+  }
+}
+
+.form {
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 36px;
+  &__row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 41.6px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-height: 80px;
+    color: #919399;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    background: #fff;
+    padding: 10px 12px;
+  }
+
+  &__name,
+  &__number {
+    color: #919399;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid var(--borders-color-border, rgba(0, 16, 61, 0.12));
+    background: var(--main-color-bg, #fff);
+    margin-left: -2px;
+  }
+
+  &__btn {
+    button {
+      color: #fff;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      border-radius: 4px;
+      background: #ef7c00;
+      border: 1px solid #ef7c00; 
+      padding: 10px 20px;
+      transition: 0.5s;
+      &:hover {
+        background-color: #fff;
+        color: #ef7c00;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+}

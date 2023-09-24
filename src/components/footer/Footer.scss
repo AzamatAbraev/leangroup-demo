@@ -1,0 +1,140 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #00103d0f;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #919399;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 49px;
+    padding-top: 16px;
+    padding-bottom: 46px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__title {
+      color: #2c2d2e;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      a {
+        color: #2c2d2e;
+        font-feature-settings: "clig" off, "liga" off;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        &:hover {
+          color: #ef7c00;
+        }
+      }
+    }
+  }
+
+  &__address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__title {
+      color: #ef7c00;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    &__numbers {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      p {
+        color: #2c2d2e;
+        font-feature-settings: "clig" off, "liga" off;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &__copyright {
+    color: #919399;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__info {
+    justify-content: start;
+    gap: 90px;  
+  }
+
+  .footer__address {
+    display: flex;  
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__info {
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 30px;
+  }
+
+  .footer__address {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__info, .footer__address, .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__top {
+    gap: 20px;
+  }
+}

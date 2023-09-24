@@ -1,0 +1,88 @@
+.team {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+.team__title {
+  color: #2c2d2e;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+.team__title span {
+  color: #ef7c00;
+}
+.team__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.team__img {
+  border-radius: 50%;
+}
+.team__img img {
+  border-radius: 50%;
+  width: 100%;
+}
+.team__name {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.team__position {
+  color: #919399;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: center;
+}
+.team__number {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+}
+.team__email {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+}
+.team__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.team__btn button {
+  padding: 10px 20px;
+  color: #ef7c00;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ef7c00;
+  transition: 0.5s ease;
+}
+.team__btn button:hover {
+  background-color: #ef7c00;
+  color: #fff;
+}
+
+#team .slick-prev,
+#team .slick-next {
+  display: none !important;
+}

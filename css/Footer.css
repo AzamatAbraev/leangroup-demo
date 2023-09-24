@@ -1,0 +1,124 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 16, 61, 0.0588235294);
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #919399;
+}
+.footer__media {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 49px;
+  padding-top: 16px;
+  padding-bottom: 46px;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__col__title {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer__col__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__col__desc a {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer__col__desc a:hover {
+  color: #ef7c00;
+}
+.footer__address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__column__title {
+  color: #ef7c00;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer__column__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__column__numbers p {
+  color: #2c2d2e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.footer__copyright {
+  color: #919399;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+@media (max-width: 1000px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+  .footer__info {
+    justify-content: start;
+    gap: 90px;
+  }
+  .footer__address {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__info {
+    flex-wrap: wrap;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    row-gap: 30px;
+  }
+  .footer__address {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .footer__info, .footer__address, .footer__top {
+    flex-direction: column;
+  }
+  .footer__top {
+    gap: 20px;
+  }
+}

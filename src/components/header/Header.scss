@@ -1,0 +1,131 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  z-index: 11;
+  background: #fff;
+  box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+}
+
+.nav {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    &__link {
+      padding: 0px 16px;
+      border-right: 1px solid rgba(0, 16, 61, 0.12);
+      color: #2c2d2e;
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: 0.5s;
+      &:hover {
+        color: #ef7c00;
+      }
+    }
+
+    .list__last {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__change {
+      padding: 2px;
+      border: none;
+      background-color: #fff !important;
+      img {
+        background-color: #fff !important;
+      border-radius: 50%;
+
+      }
+    }
+  }
+}
+
+.nav__res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  transition: .7s;
+  &__link {
+    cursor: pointer;
+    color: #2c2d2e;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: 0.5s;
+    text-align: center;
+    &:hover {
+      color: #ef7c00;
+    }
+  }
+}
+
+.show {
+  display: none;
+  flex-direction: column;
+  top: 80px;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0px 3px 5px 1px rgba(0, 16, 61, 0.06);
+}
+
+.hamburger {
+  display: none;
+  .nav__open {
+    background-color: #fff !important;
+    border: none;
+    img {
+      background-color: #fff !important;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav__list {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav__list {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: sans-serif;
+  src: url(../src/assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../src/assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../src/assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../src/assets/fonts/Montserrat-Regular.ttf);
+}
+
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+ul {
+  list-style-type: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1174px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dark * {
+  background-color: black !important;
+  color: white !important;
+
+  .nav__open {
+    background-color: #fff;
+  }
+
+  #products .container {
+    background-color: transparent !important;
+  }
+
+  .slide-content {
+    background-color: transparent !important;
+  }
+
+  .nav__theme__change {
+    background-color: #fff !important;
+  }
+}

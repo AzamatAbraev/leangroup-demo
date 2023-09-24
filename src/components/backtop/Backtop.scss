@@ -1,0 +1,23 @@
+#backtop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #EF7C00;
+  padding: 25px;
+  border-radius: 50%;
+  z-index: 11;
+  .backtop-container {
+    position: relative;
+  }
+  a {
+    position: relative;
+    cursor: pointer;
+    img {
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
